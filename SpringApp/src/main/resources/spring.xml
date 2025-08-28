@@ -4,19 +4,21 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="dev" class="org.example.Dev">
+    <bean id="dev" class="org.example.Dev" autowire="byName">
 <!-- here property used by  setter method-->
 <!--  <property name="age" value="24"></property>-->
 <!--        <constructor-arg value="23">-->
 <!--        </constructor-arg>-->
 <!--        <property name="laptop" ref="lap1">       </property>-->
-        <constructor-arg ref="lap1">
+<!--        <constructor-arg ref="lap1">-->
+<!--        </constructor-arg>-->
+<!--        <property name="com" ref="lap1">-->
 
-        </constructor-arg>
-
-
+<!--        </property>-->
     </bean>
     <bean id="lap1" class="org.example.Laptop">
+    </bean>
+    <bean id="desk1" class="org.example.Desktop">
     </bean>
 
 </beans>

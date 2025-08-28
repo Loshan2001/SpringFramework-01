@@ -1,28 +1,18 @@
 package org.example;
 
 public class Dev {
-    private int age;
-
-    public Laptop getLaptop() {
-        return laptop;
+    private Computer com;
+    public Computer getCom() {
+        return com;
     }
-
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setCom(Computer com) {
+        this.com = com;
     }
-
-    private Laptop laptop;
     public Dev(Laptop laptop){
-        this.laptop = laptop;
+
     }
     public void build(){
         System.out.println("working on awesome project");
-        laptop.compile();
     }
-    public int getAge(){
-        return age;
-    }
-    public void setAge(int age){
-        this.age = age;
-    }
+
 }
