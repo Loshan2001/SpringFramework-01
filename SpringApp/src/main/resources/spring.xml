@@ -13,8 +13,9 @@
 <!--        <constructor-arg ref="lap1">-->
 <!--        </constructor-arg>-->
 <!--        <property name="com" ref="lap1">-->
-
 <!--        </property>-->
+
+
     </bean>
     <bean id="lap1" class="org.example.Laptop">
     </bean>
